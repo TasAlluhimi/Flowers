@@ -12,13 +12,13 @@ function Get() {
 
   return (
     <>
-        <div className='h-screen flex flex-wrap gap-10 bg-pink-50 p-10'>
+        <div className='h-screen flex flex-wrap gap-10 p-10'>
             {data.map((item)=>{
                 return(
                     <>
                         <div 
                         key={item.id}
-                        className='w-80 border'>
+                        className='w-80 h-fit text-center border'>
                             <div style={{backgroundImage: `url(${item.image})`}}
                             className='h-52 bg-cover bg-center'></div>
                             <p>{item.flower}</p>
